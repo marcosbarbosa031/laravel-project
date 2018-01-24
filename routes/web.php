@@ -19,6 +19,7 @@ Route::get('/cadastrar', ['uses' => 'Controller@cadastrar']);
 * =========================================================================
 */
 Route::get('/login', ['uses' => 'Controller@login']);
-Route::post('/login', ['as' =>'user.login', 'uses' => 'Controller@auth']);
+Route::post('/login', ['as' =>'user.login', 'uses' => 'DashboardControler@auth']);
 
 
+Route::post('/dashboard', ['as' =>'user.dashboard', 'uses' => 'DashboardControler@index']);
