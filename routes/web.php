@@ -22,4 +22,4 @@ Route::get('/login', ['uses' => 'Controller@login']);
 Route::post('/login', ['as' =>'user.login', 'uses' => 'DashboardControler@auth']);
 
 
-Route::post('/dashboard', ['as' =>'user.dashboard', 'uses' => 'DashboardControler@index']);
+Route::get('/dashboard', ['as' =>'user.dashboard', 'uses' => 'DashboardControler@index']);
